@@ -39,4 +39,4 @@
 * You should produce the exact same output as in the example
 * Warnings are allowed
 * Your program should return 0
-* ou might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
+* You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
