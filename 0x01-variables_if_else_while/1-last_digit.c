@@ -10,6 +10,7 @@
  * if the last digit greater than 5;
  * if the last digit is equal to 0;
  * if the last digit is less than 6 and not 0;
+ * i will come back
  * Return: 0;
 */
 int main(void)
