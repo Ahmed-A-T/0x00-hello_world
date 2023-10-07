@@ -5,7 +5,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - Checks if the generated randon number 
+ * main - Checks if the generated randon number
  * lower than, equal or greater than 0;
  * Return: 0;
 */
