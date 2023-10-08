@@ -9,7 +9,7 @@ int main(void)
 {
 	char num;
 
-	num = 98;
+	num = 97;
 	while (num < 123)
 	{
 		if ((num != 101) || (num != 113))
