@@ -12,10 +12,9 @@ int main(void)
 	num = 97;
 	while (num < 123)
 	{
-		if ((num != 101) || (num != 113))
-		{
-			putchar(num);
-		}
+		if (num != 101)
+			if (num != 113)
+				putchar(num);
 		num += 1;
 	}
 	putchar(10);
