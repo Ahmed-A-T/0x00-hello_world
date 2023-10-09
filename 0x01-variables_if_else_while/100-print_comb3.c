@@ -18,10 +18,10 @@ int main(void)
 			putchar(num2);
 			putchar(44);
 			putchar(32);
-			if (num2 > 56)
-				break;
-			else
+			if (num2 < 56)
 				num2 += 1;
+			else
+				break;
 		}
 		if (num1 > 55)
 		{
