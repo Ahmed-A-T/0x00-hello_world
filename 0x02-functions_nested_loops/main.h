@@ -1,6 +1,6 @@
-int _putchar(int ch)
-{
-	printf(ch);
+#ifndef MAIN_H_
+#define MAIN_H_
 
-	return (0);
-}
+int _putchar(char ch);
+
+#endif
