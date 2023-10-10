@@ -12,8 +12,8 @@ int _islower(int c)
 	for (ch = 65; ch <= 90; ch++)
 	{
 		if (c == ch)
-			return (1;
+			return (1);
 		else
-			return 0;
+			return (0);
 	}
 }
