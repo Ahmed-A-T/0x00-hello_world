@@ -7,7 +7,7 @@
  */
 int _islower(int c)
 {
-	for (ch = 65; ch <= 90; ch++)
+	for (int ch = 65; ch <= 90; ch++)
 	{
 		if (c == ch)
 			return (1;
