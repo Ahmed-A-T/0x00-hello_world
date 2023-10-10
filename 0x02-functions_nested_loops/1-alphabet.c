@@ -12,14 +12,14 @@ int main(void)
 	 *
 	 * Return: Dosen't returns anything
 	 */
-	void print_alphabet(void);
+	void print_alphabet(void)
 	{
 		char ch = 'a';
 		for (ch = 'a'; ch <= 'z'; ch++)
 			putchar(ch);
-		putchar(' ');
+		putchar(10);
 	}
-	putchar(10);
+	print_alphabet();
 
 	return (0);
 }
