@@ -1,6 +1,6 @@
 int _putchar(int ch)
 {
-	printf("_putchar");
+	printf(ch);
 
 	return (0);
 }
