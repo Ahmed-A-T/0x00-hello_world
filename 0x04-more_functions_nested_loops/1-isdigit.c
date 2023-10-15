@@ -1,8 +1,8 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
  * _isdigit - Checks for a digit from 0 to 9
+ * @c: The input to be checked
  *
  * Return: return 1 if the entered value is digit from 1 to 9
  * and returns 0 otherwise
