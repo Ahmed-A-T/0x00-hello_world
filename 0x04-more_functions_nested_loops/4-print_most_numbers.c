@@ -5,7 +5,7 @@
  * except 2 and 4
  *
  * Return: a void function dosen't return anything
-*/
+ */
 void print_most_numbers(void)
 {
 	char ch;
