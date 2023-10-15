@@ -3,6 +3,7 @@
 /**
  * print_numbers - prints the numbers, from 0 to 9
  *
+ * Return: it's a void function nothing to return
 */
 void print_numbers(void)
 {
