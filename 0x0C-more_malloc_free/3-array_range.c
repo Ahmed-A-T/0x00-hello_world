@@ -26,5 +26,5 @@ int *array_range(int min, int max)
 		n++;
 	}
 
-	return (ar);
+	return (ptr);
 }
