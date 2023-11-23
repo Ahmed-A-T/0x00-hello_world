@@ -1,46 +1,26 @@
 #include <stdio.h>
+#include "main.h"
+#include <math.h>
 /**
- * print_binary - prints decimal as binary
- * @n: long integer
+ * print_binary - Function that prints the binary representation of a number.
+ * Prototype: void print_binary(unsigned long int n);
+ * @n: number to convert to binary
+ * You are not allowed to use arrays
+ * You are not allowed to use malloc
+ * You are not allowed to use the % or / operators
  */
-
 void print_binary(unsigned long int n)
 {
-	signed long int size;
-	char c;
-	int flag;
-
-	size = sizeof(n) * 8 - 1;
-
 	if (n == 0)
 	{
-		printf("0");
+		putchar('0');
 		return;
 	}
-
-	if (n == 1)
+	else if (n == 1)
 	{
-		printf("1");
+		putchar ('1');
 		return;
 	}
-
-	flag = 0;
-
-	while (size >= 0)
-	{
-		c = (n >> size) & 1;
-
-		if (flag == 1)
-			putchar(c + '0');
-		else
-		{
-			if (c == 1)
-			{
-				putchar(c + '0');
-				flag = 1;
-			}
-		}
-
-		size -= 1;
-	}
+	print_binary(n >> 1);
+	putchar('0' + (n & 1));
 }
