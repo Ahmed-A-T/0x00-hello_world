@@ -1,56 +1,39 @@
+/*
+ * Filename: 101-print_comb4.c
+ * Author: Ahmed-A-T
+ */
+
 #include <stdio.h>
 
+/**
+ * main - Prints all possible different combinations of three digits
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
-	int num1, num2, num3;
+	int first_digit, second_digit, third_digit;
 
-	num1 = 48;
-	num2 = 49;
-	num3 = 50;
-	while ((num1 < num2) && (num2 < num3))
+	for (first_digit = 0; first_digit <= 9; first_digit++)
 	{
-		while (num2 < num3)
+		for (second_digit = first_digit + 1; second_digit <= 9; second_digit++)
 		{
-			while (num2 < num3)
+
+			for (third_digit = second_digit + 1; third_digit <= 9; third_digit++)
 			{
-				if (num3 < 58)
+				putchar(first_digit + '0');
+				putchar(second_digit + '0');
+				putchar(third_digit + '0');
+				if (first_digit == 7 && second_digit == 8 && third_digit == 9) 
 				{
-					putchar(num1);
-					putchar(num2);
-					putchar(num3);
-					if((num1 < 54) || (num3 < 56))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					num3 += 1;
+					continue;
 				}
-				else
-				{
-					break;
-				}
+				putchar(',');
+				putchar(' ');
 			}
-			if (num2 < 57)
-			{
-				num2 += 1;
-				num3 = num2 + 1;
-			}
-			else
-			{
-				break;
-			}
-		}
-		if (num1 < 56)
-		{
-			num1 += 1;
-			num2 = num1 + 1;
-		}
-		else
-		{
-			putchar(10);
-			break;
 		}
 	}
+	putchar('\n');
 
 	return (0);
 }
