@@ -12,29 +12,21 @@
  */
 int main(void)
 {
-	int first_digit, second_digit, third_digit, fourth_digit;
+	int i, j;
 
-	for (first_digit = 0; first_digit <= 9; first_digit++)
+	for (i = 0; i < 100; i++)
 	{
-		for (second_digit = 0; second_digit <= 9; second_digit++)
+		for (j = 1; j < 99; j++)
 		{
-			for (third_digit = first_digit; third_digit <= 9; third_digit++)
+			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
+			putchar(' ');
+			putchar(j / 10 + '0');
+			putchar(j % 10 + '0');
+			if (i != 98 || j != 99)
 			{
-				for (fourth_digit = second_digit + 1; fourth_digit <= 9; fourth_digit++)
-				{
-					putchar(first_digit + '0');
-					putchar(second_digit + '0');
-					putchar(' ');
-					putchar(third_digit + '0');
-					putchar(fourth_digit + '0');
-					if (first_digit == 9 && second_digit == 8
-						&& third_digit == 9 && fourth_digit == 9)
-					{
-						continue;
-					}
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
