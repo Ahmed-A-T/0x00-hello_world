@@ -3,7 +3,6 @@
  * Author: Ahmed-A-T
  */
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_times_table - Prints the n times table, starting with 0.
@@ -15,9 +14,9 @@ void print_times_table(int n)
 	int i, j, result = 0;
 	if (n >= 0 && n <= 15)
 	{
-		for (i = 0; i < n; i++)
+		for (i = 0; i <= n; i++)
 		{
-			for (j = 0; j < n; j++)
+			for (j = 0; j <= n; j++)
 			{
 				result = i * j;
 				if (result < 10)
@@ -32,7 +31,7 @@ void print_times_table(int n)
 
 					}
 				}
-				else if (result > 9 && result < 100)
+				else if ((result > 9) && (result < 100))
 				{
 					_putchar((result / 10) + '0');
 					_putchar((result % 10) + '0');
