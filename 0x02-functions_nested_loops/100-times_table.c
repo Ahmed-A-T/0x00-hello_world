@@ -38,11 +38,19 @@ void print_times_table(int n)
 				}
 				if (j < n)
 				{
-					if (result >= 0 && result <= 99)
+					if (result >= 0 && result <= 9)
 					{
 						_putchar(',');
 						_putchar(' ');
 						_putchar(' ');
+						_putchar(' ');
+					}
+					else if (result >=10 && result <= 99)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+
 					}
 					else
 					{
