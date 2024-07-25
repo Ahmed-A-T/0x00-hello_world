@@ -20,15 +20,10 @@ int main(void)
 		sum = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = sum;
-		if (sum <= 4000000)
-		{
-			if (sum % 2 == 0)
-			{
-				result += sum;
-			}
-		}
-		else
+		if (sum > 4000000)
 			break;
+		if (sum % 2 == 0)
+			result += sum;
 	}
 	printf("%lu\n", result);
 
