@@ -12,10 +12,10 @@
  */
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long int fib1 = 0, fib2 = 1, sum;
 	int i;
 
-	for (i = 0; i <= 98; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		sum = fib1 + fib2;
 		fib1 = fib2;
