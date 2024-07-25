@@ -18,8 +18,9 @@ int main(void)
 		sum = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = sum;
-		if (i <= 49)
-			printf(", %lu", sum);
+		printf("%lu", sum);
+		if (i < 49)
+			printf(", ");
 		else
 			printf("\n");
 	}
