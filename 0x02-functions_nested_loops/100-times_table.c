@@ -22,8 +22,7 @@ void print_times_table(int n)
 				result = i * j;
 			 	if (j == 0)
 				{
-					_putchar('0');
-					continue;
+					_putchar((result / 10) + '0');
 				}
 				else
 				{
