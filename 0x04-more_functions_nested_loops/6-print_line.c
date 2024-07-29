@@ -1,4 +1,4 @@
-/* 
+/*
  * Filename: 6-print_line.c
  * Author: Ahmed-A-T
  */
@@ -12,6 +12,7 @@
 void print_line(int n)
 {
 	int i;
+
 	if (n > 0)
 	{
 		for (i = 1; i <= n; i++)
