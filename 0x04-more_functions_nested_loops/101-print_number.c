@@ -12,6 +12,7 @@
 void print_number(int n)
 {
 	int divisor = 1, digit;
+
 	if (n < 0)
 	{
 		_putchar('-');
