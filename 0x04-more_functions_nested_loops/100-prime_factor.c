@@ -13,7 +13,7 @@ int main(void)
 {
 	int long digit = 612852475143;
 	int i = 2;
-	
+
 	while (digit / i >= 1)
 	{
 		if (digit % i == 0)
